@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/honeytony/naruto-cards/static/css/main.8ffbc965.css",
+    "main.js": "/honeytony/naruto-cards/static/js/main.58a889f8.js",
+    "static/media/left.jpg": "/honeytony/naruto-cards/static/media/left.1714564be2b5544cfe6b.jpg",
+    "static/media/right.jpg": "/honeytony/naruto-cards/static/media/right.be9e30eac4e53fa37652.jpg",
+    "static/media/floor.jpg": "/honeytony/naruto-cards/static/media/floor.21b85a59dfc8b698bc7a.jpg",
+    "static/media/logo.png": "/honeytony/naruto-cards/static/media/logo.ac76fc3884485f5477f9.png",
+    "static/media/sharingan.jpg": "/honeytony/naruto-cards/static/media/sharingan.d440b394f4bfc1724bdd.jpg",
+    "index.html": "/honeytony/naruto-cards/index.html",
+    "main.8ffbc965.css.map": "/honeytony/naruto-cards/static/css/main.8ffbc965.css.map",
+    "main.58a889f8.js.map": "/honeytony/naruto-cards/static/js/main.58a889f8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8ffbc965.css",
+    "static/js/main.58a889f8.js"
+  ]
+}
