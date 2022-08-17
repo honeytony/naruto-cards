@@ -1,13 +1,12 @@
 body {
     margin: 0;
     padding: 0;
-
     overflow: hidden;
     background-color: rgb(8, 8, 8);
-
     background-size: contain 100%;
     background-position: top center;
     background-repeat: no-repeat;
+    perspective: 1000px;
 }
 
 .App {
@@ -27,7 +26,6 @@ body {
         }
     }
     &.game {
-        perspective: 1000px;
         overflow-y: auto;
         scrollbar-color: red red;
         &:before {

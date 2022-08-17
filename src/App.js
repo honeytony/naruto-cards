@@ -63,6 +63,7 @@ function App() {
     const [cardList, setCardList] = useState();
     const [choiseOne, setChoiseOne] = useState();
     const [choiseTwo, setChoiseTwo] = useState();
+    const [score, setScore] = useState(0);
     const [turns, setTurns] = useState(0);
     let count = 0;
     /*---------------Проверяем все ли карты открыты----------------*/
@@ -77,7 +78,7 @@ function App() {
                         resetTurn();
                     }, 1000);
                     setTimeout(() => {
-                        startGame(difficult);
+                        playerWin();
                     }, 1000);
                 }
             });
@@ -97,7 +98,11 @@ function App() {
                     });
                 });
                 resetTurn();
+                setScore(score + (10 - difficult));
             } else {
+                if (score > 4) {
+                    setScore(score - 4);
+                }
                 setTimeout(() => {
                     resetTurn();
                 }, 800);
@@ -134,17 +139,23 @@ function App() {
     }
     function menu() {
         setGameState('menu');
+        setScore(0);
     }
     function stateDifficult() {
         setGameState('difficult');
     }
-    //
+    function playerWin() {
+        setGameState('win');
+        setCardList(null);
+    }
+
     return (
         <div className={gameState + ' App'}>
             {!cardList ? (
                 <GameMenu
                     startGame={startGame}
                     gameState={gameState}
+                    score={score}
                     about={about}
                     menu={menu}
                     stateDifficult={stateDifficult}
@@ -156,6 +167,7 @@ function App() {
                     choiseTwo={choiseTwo}
                     setCurrentCard={setCurrentCard}
                     disabled={disabled}
+                    score={score}
                 />
             )}
         </div>

@@ -5,25 +5,32 @@
         }
     }
 }
+
+h3 {
+    color: white;
+}
+
 .cardList {
     z-index: 2;
     box-sizing: border-box;
     padding: 20px;
     flex-wrap: wrap;
-    width: 1000px;
+    width: 680px;
     max-width: 100%;
     margin: 0 auto;
     display: flex;
     justify-content: space-around;
 
     align-items: center;
-    padding-top: 80px;
+    position: absolute;
+    top: 100px;
+    left: calc(50% - 340px);
 
     .card {
         margin: 10px;
         perspective: 400px;
-        width: 200px;
-        height: 283px;
+        width: 140px;
+        height: 200px;
         transition: 0.3s;
         cursor: pointer;
 
@@ -52,8 +59,8 @@
             position: absolute;
             transition: 0.3s;
 
-            width: 200px;
-            height: 282px;
+            width: 140px;
+            height: 200px;
             backface-visibility: hidden;
             transform: rotateY(-180deg);
 
@@ -68,8 +75,8 @@
             position: absolute;
             background: linear-gradient(#000000 100%, #000000 100%);
             transform: rotateY(0deg);
-            width: 200px;
-            height: 282px;
+            width: 140px;
+            height: 200px;
             border-radius: 15px;
             .sharingan {
                 width: 56px;
