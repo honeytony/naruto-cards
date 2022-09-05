@@ -43,9 +43,12 @@
     }
     .logo {
         width: 470px;
+        max-width: 100%;
         height: 253px;
         background-image: url(../../Assets/Images/logo.png);
         background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center bottom;
     }
 
     .buttons {
@@ -53,11 +56,13 @@
         flex-direction: column;
         justify-content: space-between;
         min-height: 150px;
+        width: 400px;
+        max-width: 100%;
 
         button {
             box-sizing: border-box;
 
-            width: 392px;
+            width: 100%;
             height: 68px;
 
             background: linear-gradient(90deg, #ffa714 46.38%, #ef4b1f 63.31%);
